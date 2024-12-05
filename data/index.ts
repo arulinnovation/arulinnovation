@@ -123,34 +123,27 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "They provide customized solutions tailored to meet specific operational needs, including automated assembly lines, quality control systems, and predictive maintenance tools. Such firms play a pivotal role in modernizing industries, boosting productivity, and driving innovation, ensuring that businesses stay competitive in a rapidly evolving global market.",
+    
+    name: "Maadhavan",
+    title: "Head of OSS Automation",
+    img: "./profile.svg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "An automation manufacturing company specializes in designing, developing, and implementing advanced systems that streamline production processes across various industries. By integrating cutting-edge technologies such as robotics, artificial intelligence, and IoT (Internet of Things), these companies enhance efficiency, reduce human error, and optimize resource utilization.",
+    name: "Mady",
+    title: "Director of OSS Automation",
+    img: "./re.svg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "They deploy a wide range of technologies, including robotic systems, CNC machinery, vision-guided tools, and automated conveyors, to streamline production lines. Beyond efficiency, these companies enhance workplace safety by minimizing human interaction with hazardous environments.",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "Manager of OSS Automation",
+    img: "./p.jpeg",
   },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+  
 ];
 
 export const companies = [
@@ -220,14 +213,22 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "./git.svg",
+    img: "./whatsapp.svg",
+    link: "https://wa.me/+919445390681?text=Hi",
   },
   {
     id: 2,
-    img: "./twit.svg",
+    img: "./instagram.svg",
+    link: "https://www.instagram.com",
   },
   {
     id: 3,
-    img: "./link.svg",
+    img: "./twiter.svg",
+    link: "https://wa.me/1234567890",
+  },
+  {
+    id: 4,
+    img: "./email.svg",
+    link: "https://wa.me/1234567890",
   },
 ];
