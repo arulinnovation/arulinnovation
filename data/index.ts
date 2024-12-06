@@ -141,7 +141,7 @@ export const testimonials = [
       "They deploy a wide range of technologies, including robotic systems, CNC machinery, vision-guided tools, and automated conveyors, to streamline production lines. Beyond efficiency, these companies enhance workplace safety by minimizing human interaction with hazardous environments.",
     name: "Michael Johnson",
     title: "Manager of OSS Automation",
-    img: "./p.jpeg",
+    img: "./profile.svg",
   },
   
 ];

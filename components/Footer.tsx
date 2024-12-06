@@ -39,7 +39,7 @@ const Footer = () => {
           {socialMedia.map((info) => (
             <a
     key={info.id}
-    href={`https://wa.me/${info.phone}?text=${encodeURIComponent("Hi")}`} // WhatsApp link with pre-filled message
+    href={info.link}
     target="_blank" // Opens link in a new tab
     rel="noopener noreferrer" // Security for external links
     className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"

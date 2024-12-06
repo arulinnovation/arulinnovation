@@ -21,7 +21,7 @@ const Clients = () => {
           <InfiniteMovingCards
             items={testimonials}
             direction="left"
-            speed="slow"
+            speed="normal"
           />
         </div>
 
