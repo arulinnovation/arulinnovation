@@ -28,7 +28,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: " Our Projects",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a Animation library",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -213,8 +213,8 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "./whatsapp.svg",
-    link: "https://wa.me/+919445390681?text=Hi",
+    img: "./email.svg",
+    link: "mailto:ossautomation@gmail.com?subject=Hello&body=Hi",
   },
   {
     id: 2,
@@ -224,11 +224,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "./twiter.svg",
-    link: "https://wa.me/1234567890",
+    link: "",
   },
-  {
-    id: 4,
-    img: "./email.svg",
-    link: "https://wa.me/1234567890",
-  },
+  
 ];
