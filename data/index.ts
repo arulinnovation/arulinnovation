@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 1,
     title: "Hot Plate Weld Machine",
-    des: "These are designed and tailored made as per the customer specific requirements.",
+    des: "Used for welding plastic parts using a heated plate with precision.",
     img: "./g1.gif",
     //iconLists: ["./re.svg", "./ts.svg"],
     link: "https://www.google.com/search?q=automation+spm+machine",
@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "Medical Component Valve Assembly Machine",
-    des: "A customized machine that's designed to perform a specific task.",
+    des: "Automates the valve assembly process in medical devices.",
     img: "./g2.gif",
     //iconLists: ["./re.svg", "./ts.svg"],
     link: "https://www.google.com/search?q=what+is+Industrial+Spm+Machine",
@@ -89,15 +89,15 @@ export const projects = [
   {
     id: 3,
     title: "Tooth Brush Cap Assembly Machine",
-    des: "SPM are those machines which are not available off the shelf.",
+    des: "Specially built to attach caps on toothbrushes automatically.",
     img: "./g3.gif",
     //iconLists: ["./re.svg", "./ts.svg"],
     link: "https://www.google.com/search?q=what+is+Spm+Cutting+Machines",
   },
   {
     id: 4,
-    title: "Pen Packing machine",
-    des: "We can customise Drilling machines with Multi Heads as per the requirement.",
+    title: "Pen Packing Machine",
+    des: "Automates sorting and packing of pens efficiently.",
     img: "./g4.gif",
     //iconLists: ["./re.svg", "./ts.svg"],
     link: "https://www.google.com/search?q=what+is+spm+drilling+machine",
@@ -105,19 +105,19 @@ export const projects = [
   {
     id: 5,
     title: "Gang Screw Assembly Machine",
-    des: "We are specialized in SPM (Special Purpose Machine) Control Panels used in Pharma, FMCG, Packaging Food Processing industries.",
+    des: "Designed for simultaneous assembly of multiple screws.",
     img: "./g5.gif",
     //iconLists: ["./re.svg", "./ts.svg"],
     link: "https://www.google.com/search?q=what+is+Spm+Machine+Control+Panel",
   },
   {
     id: 6,
-    title: "Automobile part Ring Assembly Machine",
-    des: "a set of instructions, data or programs used to operate computers and execute specific tasks.",
+    title: "Automobile Part Ring Assembly Machine",
+    des: "Automates ring fitting for vehicle components with accuracy.",
     img: "./g1.gif",
     //iconLists: ["./re.svg", "./ts.svg"],
     link: "https://www.google.com/search?q=what+is+Softwares",
-  },
+  },  
 ];
 
 export const testimonials = [
