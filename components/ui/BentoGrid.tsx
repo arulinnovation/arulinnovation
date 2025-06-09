@@ -52,8 +52,41 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Drilling", "Cutting", "Drilling"];
-  const rightLists = ["Automation Spm", "Industrial Spm", "GraphQL"];
+  const expertiseFields = [
+    { title: "CUSTOM AUTOMATION", icon: "🏭" },
+    { title: "DESIGN SERVICE", icon: "📐" },
+    { title: "LONG TERM SUPPORT AND SERVICE", icon: "🔧" },
+    { title: "JIG & FIXTURE", icon: "⚙️" },
+    { title: "CLIENT-BUDGET-ALIGNED SOLUTIONS", icon: "💰" },  //client-budget-aligned solutions  Maintenance & Service
+    { title: "HIGH PROFESSIONAL MANUFACTURING", icon: "🎛️" },
+
+  ];
+
+  const stats = [
+    { label: "CLIENTS", target: 100, emoji: "👥" },
+    { label: "DELIVERIES", target: 95, emoji: "🚚" },
+    { label: "AWARDS", target: 55, emoji: "🏆" },
+  ];
+
+  const [completedCount, setCompletedCount] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
+
+  const handleCountComplete = () => {
+    setCompletedCount((prev) => {
+      const newCount = prev + 1;
+      if (newCount === stats.length) {
+        setIsComplete(true);
+      }
+      return newCount;
+    });
+  };
+
+  const leftLists = ["INK FILLING M/C", "JIG &FIXTURE ", "DESIGN SERVICE"];
+  const rightLists = [
+    "MANUFACTURING OF SPM M/C",
+    "CONTROL PANEL WORK",
+    "CONVEYORS",
+  ];
 
   const [copied, setCopied] = useState(false);
 
@@ -135,39 +168,22 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
-
-          {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
-
-          {/* Tech stack list div */}
-          {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+          { id === 5 && (
+              <div className="relative z-0 rounded-xl overflow-hidden p-6 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('./blue.jpg')` }}>
+                <div className="grid grid-cols-2 gap-4 relative z-10 backdrop-blur-sm">
+                  {expertiseFields.map((field, index) => (
+                      <div
+                          key={index}
+                          className="bg-white/10 backdrop-blur-md rounded-lg p-4 hover:bg-white/20 transition-all duration-300 cursor-pointer"
+                      >
+                        <div className="text-2xl mb-2">{field.icon}</div>
+                        <div className="text-white/90 text-sm font-medium">
+                          {field.title}
+                        </div>
+                      </div>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {rightLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
           )}
           {id === 6 && (
             <div className="mt-5 relative">
@@ -182,7 +198,7 @@ export const BentoGridItem = ({
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
-              
+
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy our email address"}
                 icon={<IoCopyOutline />}

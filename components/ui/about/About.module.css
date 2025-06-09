@@ -1,0 +1,162 @@
+.container {
+  background-color: rgba(4, 7, 29, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 60px;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 12000px;
+  z-index: 1;
+}
+
+.title {
+  color: #60a5fa;
+  ;
+  /* Tailwind's text-blue-400 hex code #60a5fa; */
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.aboutImageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+}
+
+.aboutImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageCaption {
+  margin-top: -35px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.gradientBorder {
+  position: relative;
+  padding: 2px;
+  /* thin outer border space */
+  border-radius: 1.75rem;
+  background: linear-gradient(90deg, rgba(4, 7, 29, 1) 0%, rgba(12, 14, 35, 1) 100%);
+  overflow: hidden;
+  animation: borderMove 10s linear infinite;
+}
+
+.gradientInner {
+  background: #0f172a;
+  /* your actual inner content background */
+  border-radius: calc(1.75rem * 0.96);
+  padding: 20px;
+  height: 100%;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.aboutItems {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+}
+
+.aboutItem {
+  padding: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(90deg, rgba(80, 204, 243, 0.42) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: rgba(181, 232, 247, 0.282);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItemText h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.aboutItemText p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 20px;
+    background-color: rgba(4, 7, 29, 0.6);
+    /* keep blur effect on mobile */
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .aboutImageWrapper {
+    width: 70%;
+    /* Scale image better for mobile */
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+
+  .aboutImage {
+    display: block;
+    /* show image in mobile view */
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutItems {
+    width: 100%;
+    margin-top: 0;
+    gap: 20px;
+  }
+
+  .aboutItemText h3 {
+    font-size: 20px;
+  }
+
+  .aboutItemText p {
+    font-size: 16px;
+  }
+
+  .imageCaption {
+    font-size: 14px;
+  }
+
+
+}

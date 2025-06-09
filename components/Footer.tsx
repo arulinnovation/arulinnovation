@@ -1,40 +1,79 @@
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+//
+import { useState } from "react";
+import animationData from "@/data/confetti.json";//
 
 const Footer = () => {
+//
+  const [copied, setCopied] = useState(false);
+
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const handleCopy = () => {
+    const text = "ossautomation@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };//
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
-          src="/footer-grid.svg"
+          src="./footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
         />
       </div>
 
       <div className="flex flex-col items-center">
+        
         <h1 className="heading lg:max-w-[45vw]">
-          take <span className="text-purple">Om Sri Sai Automation - </span> spm cutting machines
+          {/* <img className="w-22 h-12 rounded-lg mx-auto mb-4 object-cover" src="./oss.jpg"/> */}
+          <img
+  className="mx-auto mb-4"
+  src="./oss1.png"
+  style={{ width: "160px", height: "100px" }}
+/>
+          <span className="text-blue-300">OM SRI SAI AUTOMATION </span>
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Kandanchavadi, Chennai,Tamil Nadu-600096.
+        <p className="text-white-600  text-3xl md:mt-10 my-5 text-center">
+          N0:06, PAUL RAJ NAGER, KANDANCHAVADI, CHENNAI-96
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <p className="text-white-600  text-xl text-center">
+          Contact Us:+91&nbsp;8939642554, 9444235822
+        </p>
+        <p className="text-white-600  text-xl text-center pt-3">
+          Email: ossautomation@gmail.com
+        </p>
+        <div className="pt-4">
+        <a href="mailto:ossautomation@gmail.com">
           <MagicButton
-            title="Let's get in touch"
+            title={copied ? "Email is Copied!" : "Copy our email address"}
+            handleClick={handleCopy}
             icon={<FaLocationArrow />}
             position="right"
+            otherClasses="!bg-[#161A31]"
           />
         </a>
+        </div>
+        <p><img className="w-60 h-60 rounded-lg mx-auto mt-4 mb-1 object-cover" src="./iso.png"/></p>
+        
+        
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+      <div className="flex -mt-4 md:flex-row flex-col justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light mr-10 pl-7">
           Copyright © 2024 OSS Automation
         </p>
-
+        {/* <img className="w-60 h-60 rounded-lg mx-auto mt-5 mb-1 object-cover ml-40 pl-20 pr-10" src="./iso.png"/> */}
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <a

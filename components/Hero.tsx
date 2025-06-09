@@ -36,7 +36,7 @@ const Hero = () => {
         <div
           // chnage the bg to bg-black-100, so it matches the bg color and will blend in
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black]"
         />
       </div>
 
@@ -45,6 +45,15 @@ const Hero = () => {
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Welcome to OSS Automation
           </p>
+          {/* <img
+            className="w-40 h-20 mx-auto mt-6 mb-1"
+            src="./oss1.png"
+          /> */}
+          <img
+  className="mx-auto mt-6 mb-1"
+  src="./oss1.png"
+  style={{ width: "160px", height: "100px" }}
+/>
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -52,7 +61,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Om Sri Sai Automation - Manufacturer of automation spm machine"
+            words="OM SRI SAI AUTOMATIONS  Manufacturer of Automation Machine"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
