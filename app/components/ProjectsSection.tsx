@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { useInView } from '../hooks/useScrollAnimation';
 
@@ -8,32 +8,32 @@ const ProjectsSection = () => {
     {
       title: "Automation SPM Machine",
       description: "Custom-designed tailored solutions for industrial automation processes.",
-      image: "./g1.gif"
+      image: "/g1.gif"
     },
     {
       title: "Industrial SPM Machine",
       description: "Task-specific customized machinery for enhanced manufacturing efficiency.",
-      image: "./g2.gif"
+      image: "/g2.gif"
     },
     {
       title: "SPM Cutting Machines",
       description: "High-precision cutting machines created off-shelf for various applications.",
-      image: "./g3.gif"
+      image: "/g3.gif"
     },
     {
       title: "SPM Drilling Machine",
       description: "Custom multi-head drilling machines for precision manufacturing needs.",
-      image: "./g4.gif"
+      image: "/g4.gif"
     },
     {
       title: "SPM Machine Control Panel",
       description: "Advanced control systems for Pharma, FMCG, Packaging, and Food Processing industries.",
-      image: "./g5.gif"
+      image: "/g5.gif"
     },
     {
       title: "Software Solutions",
       description: "Comprehensive software solutions to operate computers and execute complex tasks.",
-      image: "./g6.gif"
+      image: "/g6.gif"
     }
   ];
 
@@ -63,7 +63,8 @@ const ProjectsSection = () => {
               style={{ transitionDelay: `${500 + index * 100}ms` }}
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
+                width={100} height={100}
                   src={project.image}
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"

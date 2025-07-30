@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -45,9 +45,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <img
+            <Image
               src="/oss.jpg"
               alt="OSS Automation Logo"
+              width={100} height={100}
               className={`transition-all duration-300 ${
                 scrolled ? 'h-10 w-auto' : 'h-12 w-auto'
               }`}
