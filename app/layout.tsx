@@ -1,36 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+"use client";
 
-import "./globals.css";
-import { ThemeProvider } from "./provider";
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] });
+import { ReactNode } from "react";
+import { TooltipProvider } from "./components/ui/tooltip";
+import { Toaster as ShadcnToaster } from "./components/ui/toaster";
+import { Toaster as SonnerToaster } from "./components/ui/sonner";
 
-export const metadata: Metadata = {
-  title: "OSS Automation",
-  description: "Manufacturer of automation spm machine",
+type RootLayoutProps = {
+    children: ReactNode;
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="./oss.jpg" sizes="any" />
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: RootLayoutProps) {
+    return (
+        <html lang="en">
+        <body>
+        <TooltipProvider>
+            <ShadcnToaster />
+            <SonnerToaster />
+            {children}
+        </TooltipProvider>
+        </body>
+        </html>
+    );
 }
