@@ -1,6 +1,6 @@
 
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-import Image from 'next/image';
+// import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <Image 
-              src="/oss.jpg" 
+            <img 
+              src="./oss.jpg" 
               alt="OSS Automation Logo" 
               className="h-12 w-auto mb-4"
-              width={100} height={100}
+              // width={100} height={100}
             />
             <h3 className="text-xl font-bold mb-4">OSS AUTOMATION</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
