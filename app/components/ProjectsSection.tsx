@@ -6,33 +6,33 @@ const ProjectsSection = () => {
   const [sectionRef, inView] = useInView(0.2);
   const projects = [
     {
-      title: "Automation SPM Machine",
-      description: "Custom-designed tailored solutions for industrial automation processes.",
+      title: "Hot Plate Weld Machine",
+      description: "Used to join thermoplastic parts by heating them with a hot plate and pressing them together to form a strong bond.",
       image: "./g1.gif"
     },
     {
-      title: "Industrial SPM Machine",
-      description: "Task-specific customized machinery for enhanced manufacturing efficiency.",
+      title: "Medical Component Valve Assembly Machine",
+      description: "Precisely assembles small, sterile valve components used in medical devices with high accuracy.",
       image: "./g2.gif"
     },
     {
-      title: "SPM Cutting Machines",
-      description: "High-precision cutting machines created off-shelf for various applications.",
+      title: "Tooth Brush Cap Assembly Machine",
+      description: "Automates the attachment of protective caps onto toothbrush heads for hygienic packaging.",
       image: "./g3.gif"
     },
     {
-      title: "SPM Drilling Machine",
-      description: "Custom multi-head drilling machines for precision manufacturing needs.",
+      title: "Pen Packing machine",
+      description: "Automatically packs pens into cartons or blister packs for retail distribution.",
       image: "./g4.gif"
     },
     {
-      title: "SPM Machine Control Panel",
-      description: "Advanced control systems for Pharma, FMCG, Packaging, and Food Processing industries.",
+      title: "Gang Screw Assembly Machine",
+      description: "Simultaneously installs multiple screws into components, increasing assembly efficiency in batch production.",
       image: "./g5.gif"
     },
     {
-      title: "Software Solutions",
-      description: "Comprehensive software solutions to operate computers and execute complex tasks.",
+      title: "Automobile part Ring Assembly Machine",
+      description: "Accurately assembles sealing or retaining rings onto automotive components like shafts or housings.",
       image: "./g6.gif"
     }
   ];

@@ -14,6 +14,9 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en">
+            <head>
+        <link rel="icon" href="./oss1.png" sizes="any" />
+      </head>
         <body>
         <TooltipProvider>
             <ShadcnToaster />

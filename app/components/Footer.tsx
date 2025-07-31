@@ -1,6 +1,6 @@
 
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-// import Image from 'next/image';
+import {Facebook, Twitter, Linkedin, Instagram, Mail, ExternalLink, MapPin} from 'lucide-react';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -8,29 +8,44 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <img 
-              src="./oss.jpg" 
-              alt="OSS Automation Logo" 
+            <img
+              src="./oss1.png"
+              alt="OSS Automation Logo"
               className="h-12 w-auto mb-4"
               // width={100} height={100}
             />
             <h3 className="text-xl font-bold mb-4">OSS AUTOMATION</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Om Sri Sai Automations - Leading manufacturer of automation machines and special purpose machines, 
+              Om Sri Sai Automations - Leading manufacturer of automation machines and special purpose machines,
               delivering innovative solutions for industrial automation needs across the globe.
             </p>
+            {/* Address */}
+            <div className="mb-6">
+              <h4 className="text-lg font-semibold mb-3">Address</h4>
+              <address className="text-gray-400 not-italic leading-relaxed">
+                Om Sri Sai Automation
+
+                Bharathiar Nagar 5th Street, 174/2,
+
+                Plat No.41 Mettukuppam,
+
+                Chennai-600097, Tamil Nadu, India
+              </address>
+            </div>
+
+            {/* Contact Icons */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="mailto:ossautomation@gmail.com" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors" title="Email">
+                <Mail className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://www.justdial.com/Chennai/Om-Sri-Sai-Automation-Veeramani-Salai-PAULRAJ-NAGAR-Kandancavadi-Perungudi/044PXX44-XX44-210621193150-I3T6_BZDET" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors" title="JustDial">
+                <ExternalLink className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href="https://www.indiamart.com/om-srisaiautomation/?srsltid=AfmBOopgHf9Q1pIuCqeCNZindHhFcInO7jUHpQn01QMOPfJJRDkd1c-u" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors" title="IndiaMart">
+                <ExternalLink className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="https://www.google.co.in/maps/dir//12.93660000,80.23926000" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors" title="Location">
+                <MapPin className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -79,3 +94,4 @@ const Footer = () => {
 };
 
 export default Footer;
+ 

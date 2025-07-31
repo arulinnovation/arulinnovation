@@ -46,7 +46,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <img
-              src="./oss.jpg"
+              src="./oss1.png"
               alt="OSS Automation Logo"
               // width={100} height={100}
               className={`transition-all duration-300 ${
